@@ -1,14 +1,6 @@
-import React, { useState } from "react";
-
-
 function ListItem(props) {
-    const [value, setValue] = useState(false);
+    var value= false;
 
-    function handleClick() {
-        setValue(prevValue => {
-            return !prevValue;
-        })
-    }
     return (
         <div className="list-container"
             onClick={() => {
